@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.html{
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template:
+    'main'100vh
+    'coll'100vh
+    'about'100vh
+    'contact'100vh/
+    100%
+    
+    
+    ;
+
+}
+.main{
+    grid-area: main;
+    background-color: aqua;
+    display: grid;
+    grid-template: 
+    'header header'60px
+    'leftt rightt'100%/
+    50% 50%
+    
+    
+    
+    ;
+
+}
+.header{
+    grid-area: header;
+    grid-area:grey ;
+
+}
+.left{
+grid-area: leftt;
+background-color:blueviolet ;
+}
+.right{
+
+    grid-area: rightt;
+    background-color: darkgoldenrod;
+
+}
+.collection{
+grid-area: coll;
+background-color: wheat;
+}
+.about{
+    grid-area: about;
+    background-color: cornsilk;
+
+}
+.contact{
+    grid-area: contact;
+    background-color: cornflowerblue;
+
+
+}
