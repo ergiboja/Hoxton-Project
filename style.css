@@ -6,6 +6,7 @@
 .html{
     scroll-behavior: smooth;
 }
+
 body{
     display: grid;
     grid-template:
@@ -21,45 +22,273 @@ body{
 }
 .main{
     grid-area: main;
-    background-color: aqua;
     display: grid;
     grid-template: 
-    'header header'60px
-    'leftt rightt'100%/
+    'header header'80px
+    'first first'100%/
     50% 50%
     
     
     
     ;
-
+background-image: url(./assets/dark-blue-abstract-background-blue-lines-background-material-design-stylish-blue-background-besthqwallpapers.com-1600x1200.jpg);
 }
 .header{
     grid-area: header;
-    grid-area:grey ;
+    width: 100%;
+    background-color: #05176D;
+    background: linear-gradient(90deg, rgba(131,43,179,1) 0%, rgba(81,40,157,1) 50%, rgba(62,44,166,1) 100%);
+  
+    
+    
+    display: grid;
+    grid-auto-flow: column;
+    filter: blur(0.5px);
 
 }
-.left{
-grid-area: leftt;
-background-color:blueviolet ;
+
+.first{
+    
+    grid-area: first;
+    display: grid;
+   grid-template:
+   'leftpart rightpart'100%/
+   40% 50% ;
+
+   
 }
-.right{
+.leftpart{
+    grid-area: leftpart;
+  
+}
+.rightpart{
+    grid-area: rightpart;
+}
+.headerimg{
+    display: block;
+    margin-left: 40%;
+    margin-right: 60%;
+    width: 70%;
 
-    grid-area: rightt;
-    background-color: darkgoldenrod;
+    
+}
 
+.logo{
+    font-family: 'Propaganda', sans-serif;
+    color: #ffff;
+    font-size: 40px;
+    padding-left: 10%;
+    
+}
+.navbar{
+    display: grid;
+    align-content: center;
+}
+
+.navbar ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+.navbar li{ 
+    font-family:'Propaganda', sans-serif;
+}
+.navbar li a{
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
 }
 .collection{
 grid-area: coll;
-background-color: wheat;
+/* background-color: #ffffff; */
+display: grid;
+grid-template:
+' collheader '90px
+' cards' 100vh/
+    100%
+
+}
+.collheader{
+    grid-area: collheader;
+    background: rgb(82,41,159);
+    background: linear-gradient(90deg, rgba(82,41,159,1) 0%, rgba(78,45,174,1) 50%, rgba(66,45,176,1) 100%);
+    
+    place-content: center;
+    width: 50%;
+    border-radius: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: center;
+    text-align: center;
+    margin-top: 2%;
+    
+    
+
+}
+.collh1{
+    font-family: 'Propaganda', sans-serif;
+    color: #ffffff;
+    
+}
+.cards{
+    grid-area: cards;
+    /* background-color: #05176D; */
+    width: 90%;
+    margin-left: 5%; 
+    margin-right: 5%;
+    
+    
+    display: grid;
+    grid-auto-flow: column;
+  
+
+    
+    
+}
+
+.cardc{
+    border: none;
+    border-radius: 20px;
+    height: 500px;
+    width: 400px;
+    margin-top: 5%;
+    background-color: #05176D;
+    
+    
+    display: grid;
+    align-content: center;
+    justify-content: center;
+   
+    grid-template: 
+    'cardimage'80%
+    'cardtext'10%
+    'cardbtn'10%/
+    100%
+;
+}
+.cardimage{
+    grid-area: cardimage;
+
+}
+.cardtext{
+    grid-area: cardtext;
+    text-align: center;
+    font-family: 'Propaganda', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+.imgc1{
+    border-radius: 20px;
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+}
+.cardbtn{
+    grid-area: cardbtn;
+    text-align: center;
+    
+}
+.button{
+    border: none;
+    border-radius: 20px;
+    background: rgb(96,192,219);
+    background: linear-gradient(90deg, rgba(96,192,219,1) 0%, rgba(255,98,246,1) 50%, rgba(197,76,72,1) 100%);
+    width: 40%;
+    height: 40px;
+    
+    font-family:'Propaganda', sans-serif; ;
+}
+.button a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .about{
     grid-area: about;
-    background-color: cornsilk;
+    background-color: #204bb1;
+    display: grid;
+    grid-template:
+    'collheader collheader'90px
+    'paragraph members'87vh/
+    40% 60%;
+    column-gap: 5%;
 
+}
+.collheader{
+    width: 50%;
+}
+.paragraph{
+    grid-area: paragraph;
+    /* background-color: cornflowerblue; */
+    display: grid;
+    margin-top: 20%;
+    /* grid-auto-flow: row; */
+    /* place-content: center; */
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    font-family: 'Propaganda', sans-serif;
+    color: #ffffff;
+}
+
+.memberscard{
+    margin-top:10% ;
+    width: 80%;
+    height:80%;
+    grid-area: members;
+    display: grid;
+    grid-template:   
+    'memberheader memberheader'30px
+    'memberone membertwo'50%
+    'memberone membertwo'50%/
+    50% 40%
+    ;
+}
+.memberheader{
+    grid-area: memberheader;
+    background-color: #204bb1;
+    font-family: 'Propaganda', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.memberone{
+    grid-area: memberone;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-auto-flow: row;
+}
+.memberpic{
+    width: 100%;
+    height: 50%;
+}
+.membertwo{
+    grid-area: membertwo;
+    background-color: cyan;
 }
 .contact{
     grid-area: contact;
     background-color: cornflowerblue;
+    display:grid;
+    grid-template:
+    'collheader '90px
+    'socials'20vh
+    'msgform'50vh/
+    100%;
 
 
+}
+.socials{
+    grid-area: socials;
+    display: grid;
+    grid-auto-flow: column;
+    background-color: violet;
+}
+
+.msgform{
+    grid-area: msgform;
+    background-color: yellow;
 }
