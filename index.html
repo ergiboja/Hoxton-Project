@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="http://fonts.cdnfonts.com/css/propaganda" rel="stylesheet">
     <title>NeoNFT</title>
     <link rel="icon" href="./assets/nft-token-13061.svg">
@@ -30,6 +31,10 @@
             </div>
             <div class="first">
                 <div class="leftpart">
+                    <h1 class="lefth1">NeoNFT Now Officially Launched</h1>
+                    <p class="leftp">Wanna  get news about our latest release or be part of our prelaunch collections?<br>
+                    Click Sign Up</p>
+                    <button class="signup" onclick="location.href = 'signup.html';" type="button">Sign Up</button>
                     
                 </div>
                 <div class="rightpart">
@@ -128,17 +133,32 @@
     </section>
     <section class="contact">
         <div class="collheader">
-            <h1 class="collh1">Contact US</h1>
+            <h1 class="collh1">Contact US On</h1>
         </div>
         <div class="socials">
-            <div class="telegram">
-                
-            </div>
-            <div class="instagram"></div>
-            <div class="discord"></div>
+            <div class="instagram">
+          <a href="#" class="link" ><img class="ig" src="./assets/instagram.png"></a> 
+          <h1>instagram</h1>
         </div>
-        <div class="msgform"></div>
+        <div class="discord">
+            <a href="#" ><img class="ig" src="./assets/discord.png"></a> 
+          </div>
+          <div class="telegram">
+            <a href="#" ><img class="ig" src="./assets/telegram.png"></a> 
+          </div>
+            
+           
+        </div>
+        <div class="msgform">
+            <form>
+                <label for="message"><h1 class="formh1">Or Just Leave Us a Message?</h1></label>
+                     <input placeholder="Your message here..."  onfocus="this.placeholder=''" 
+                     onblur="this.placeholder='Or Just Leave Us a Message'" id="message" type="text">
+                <button class="subi" type="submit">Submit</button>
+            </form>
+        </div>
     </section>
+ <section class="footer">footer</section>
     
 </body>
 </html>

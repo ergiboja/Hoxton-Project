@@ -13,7 +13,8 @@ body{
     'main'100vh
     'coll'100vh
     'about'100vh
-    'contact'100vh/
+    'contact'100vh
+    'footer'20vh/
     100%
     
     
@@ -59,7 +60,42 @@ background-image: url(./assets/dark-blue-abstract-background-blue-lines-backgrou
 }
 .leftpart{
     grid-area: leftpart;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px;
+    margin-left: 20%;
   
+}
+.lefth1{
+    font-family: 'Propaganda', sans-serif;
+    color: #ffff;
+    font-size: 30px;
+    margin-top: 20%;
+    margin-bottom: 1%;
+
+}
+.leftp{
+    font-family: 'Propaganda', sans-serif;
+    color: rgb(169, 169, 169);
+    font-size: 20px;
+}
+.signup{
+    font-family: 'Propaganda', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    margin-bottom: 60%;
+    border-radius: 20px;
+    border: none;
+    background: rgb(96,192,219);
+    background: linear-gradient(90deg, rgba(96,192,219,1) 0%, rgba(255,98,246,1) 50%, rgba(197,76,72,1) 100%);
+    
+}
+.signup:hover{
+    box-shadow: 2px 3px 6px rgb(88, 129, 204);
+
 }
 .rightpart{
     grid-area: rightpart;
@@ -100,6 +136,10 @@ background-image: url(./assets/dark-blue-abstract-background-blue-lines-backgrou
     text-decoration: none;
     text-align: center;
     font-size: 20px;
+}
+.navbar li a:hover{
+    color: rgb(153, 148, 148);
+
 }
 .collection{
 grid-area: coll;
@@ -151,6 +191,7 @@ grid-template:
 
 .cardc{
     border: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
     border-radius: 20px;
     height: 500px;
     width: 400px;
@@ -168,6 +209,10 @@ grid-template:
     'cardbtn'10%/
     100%
 ;
+}
+.cardc:hover{
+    box-shadow: 0px 10px 30px #000;
+
 }
 .cardimage{
     grid-area: cardimage;
@@ -276,19 +321,137 @@ grid-template:
     grid-template:
     'collheader '90px
     'socials'20vh
-    'msgform'50vh/
+    'msgform'70vh/
     100%;
 
 
 }
-.socials{
+.socials{display: grid;
     grid-area: socials;
-    display: grid;
     grid-auto-flow: column;
-    background-color: violet;
+    justify-content: center;
+    align-content: center;
+    
+
+   
 }
+.instagram{
+    display: inline-block;
+    
+    padding-right: 0;
+    margin-right: 0;
+    display: grid;
+    border: solid 1px;
+    place-content:center ;
+}
+.instagram h1{
+    font-family: 'Propaganda', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.link{
+    display: inline-block;
+}
+.ig{
+    width: 20%;
+    justify-self: center;
+}
+.socialsbtn{
+    height: 30%;
+    width: 40%;
+    grid-area: socialbtn;
+}
+
 
 .msgform{
     grid-area: msgform;
-    background-color: yellow;
+    background-color: cornflowerblue;
+    display: grid;
+  align-content: center;
+  
+}
+form{
+    
+    background-color: #ffffff;
+    display: grid;
+    gap:10px;
+     width: 60%;
+     border:solid;
+     border-radius: 10px;
+     padding: 2%;
+     height: 60vh;
+     justify-self: center;
+     text-align: center;
+     box-shadow: 0px 4px 8px #000;
+
+   
+}
+form:hover{
+    box-shadow: 0px 10px 30px #000;
+    
+}
+.formh1{
+    font-size: 20px;
+    font-family: 'Propaganda', sans-serif;
+}
+::placeholder{
+    font-family:'Propaganda', sans-serif; 
+}
+
+.subi{
+    width: 20%;
+    height: 60%;
+    justify-self: center;
+    font-family:'Propaganda', sans-serif;  
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    border: none;
+    
+    
+}
+.subi:hover{
+    background-color: rgb(120, 164, 247);
+    box-shadow: 1px 3px 5px rgb(88, 129, 204);
+}
+#message{
+    border: none;
+    border-bottom:1px solid rgb(230, 230, 230);
+    height: 200px
+}
+
+.footer{
+ grid-area: footer;
+ background-color: crimson;
+}
+
+
+
+/* Thank you page styling */
+
+.ty{
+    display: grid;
+    grid-template:
+    'tyheader'80px
+    'tymain' 89vh/
+    100%;
+}
+.tyheader{
+    grid-area: tyheader;
+    width: 100%;
+    background-color: #05176D;
+    background: linear-gradient(90deg, rgba(131,43,179,1) 0%, rgba(81,40,157,1) 50%, rgba(62,44,166,1) 100%);
+    display: grid;
+    justify-content: center;
+    filter: blur(0.5px);
+    padding-right: 8%;
+    
+}
+.tymain{
+    grid-area: tymain;
+}
+.headerlogoty{
+    
 }
